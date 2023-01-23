@@ -1,2 +1,4 @@
-package com.akalanka.oneToOne.entity;public enum Gender {
+package com.akalanka.oneToOne.entity;
+public enum Gender {
+    MALE, FEAMLE
 }
