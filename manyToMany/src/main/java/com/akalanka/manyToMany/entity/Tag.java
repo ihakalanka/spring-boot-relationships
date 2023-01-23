@@ -17,7 +17,11 @@ public class Tag {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "name")
+
+    public Tag(String name) {
+        this.name = name;
+    }
+
     private String name;
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "tags")
     private Set<Post> posts = new HashSet<>();
