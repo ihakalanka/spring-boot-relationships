@@ -2,7 +2,6 @@ package com.akalanka.oneToMany;
 
 import com.akalanka.oneToMany.entity.Comment;
 import com.akalanka.oneToMany.entity.Post;
-import com.akalanka.oneToMany.repository.CommentRepository;
 import com.akalanka.oneToMany.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -13,9 +12,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OneToManyApplication implements CommandLineRunner {
 	@Autowired
 	private PostRepository postRepository;
-
-	@Autowired
-	private CommentRepository commentRepository;
 
 	@Override
 	public void run(String... args) throws Exception {
